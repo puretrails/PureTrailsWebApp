@@ -1,17 +1,10 @@
 from flask import Flask
 
-# fdsfdfdfsfdfdf
-
 app = Flask(__name__)
-
-# skjfdfkhjdfskjfsdjkh
 
 @app.route('/')
 def hello_world():
     return 'Hello World!'
-
-# testing daddy
-
 
 if __name__ == '__main__':
     app.run()
