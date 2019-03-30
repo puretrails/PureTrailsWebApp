@@ -1,1 +1,1 @@
-sdffsdf
+---FORMAT: $LOCATION : $LAT , $LON---
