@@ -245,15 +245,94 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        var myLatLng = {lat: 37.3328541, lng: -122.0892263};
+        var Rancho1 = {lat: 37.3328541, lng: -122.0892263};
+        var Rancho2 = {lat:37.3323572, lng: -122.0912677};
+        var Rancho3 = {lat:37.331436, lng: -122.095787};
+        var Rancho4 = {lat:37.332282, lng: -122.096883};
+        var Skyline1 = {lat:37.312621, lng: -122.177185};
+        var Skyline2 = {lat:37.312902, lng:-122.185761};
+        var Monte1 = {lat:37.318770, lng:-122.146453};
+        var Monte2 = {lat:37.318736, lng:-122.147233};
+        var Monte3 = {lat:37.325438, lng:-122.178533};
+        var Pichetti1 = {lat:37.294391, lng:-122.091090};
+        var Pichetti2 = {lat:37.294089, lng:-122.090483};
+        var Pichetti3 = {lat:37.294686, lng:-122.090471};
+        var Fremont1 = {lat:37.285347, lng:-122.059030};
+        var Fremont2 = {lat:37.285148, lng:-122.058325};
+        var Fremont3 = {lat:37.285689, lng:-122.057122};
+        var Pearson1 = {lat:37.387198, lng:-122.174059};
+        var Pearson2 = {lat:37.386679, lng:-122.180860};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: myLatLng
+          center: Rancho1
         });
-        var marker = new google.maps.Marker({
-          position: myLatLng,
+        var r1 = new google.maps.Marker({
+          position: Rancho1,
           map: map,
-          title: 'Hello World!'
+        });
+        var r2 = new google.maps.Marker({
+            position: Rancho2,
+            map: map,
+        });
+         var r3 = new google.maps.Marker({
+            position: Rancho3,
+            map: map,
+        });
+          var r4 = new google.maps.Marker({
+            position: Rancho4,
+            map: map,
+        });
+           var s1 = new google.maps.Marker({
+            position: Skyline1,
+            map: map,
+        });
+            var s2 = new google.maps.Marker({
+            position: Skyline2,
+            map: map,
+        });
+            var m1 = new google.maps.Marker({
+            position: Monte1,
+            map: map,
+        });
+            var m2 = new google.maps.Marker({
+            position: Monte2,
+            map: map,
+        });
+            var m3 = new google.maps.Marker({
+            position: Monte3,
+            map: map,
+        });
+            var p1 = new google.maps.Marker({
+            position: Pichetti1,
+            map: map,
+        });
+            var p2 = new google.maps.Marker({
+            position: Pichetti2,
+            map: map,
+        });
+            var p3 = new google.maps.Marker({
+            position: Pichetti3,
+            map: map,
+        });
+            var f1 = new google.maps.Marker({
+            position: Fremont1,
+            map: map,
+        });
+            var f2 = new google.maps.Marker({
+            position: Fremont2,
+            map: map,
+        });
+            var f3 = new google.maps.Marker({
+            position: Fremont3,
+            map: map,
+        });
+             var pa1 = new google.maps.Marker({
+            position: Pearson1,
+            map: map,
+        });
+            var pa2 = new google.maps.Marker({
+            position: Pearson2,
+            map: map,
         });
       }
     </script>
