@@ -10,8 +10,6 @@
     <meta name="author" content="">
 
     <title>PureTrails</title>
-    <!-- CSS Linking --!>
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +56,7 @@
                         <a class="page-scroll" href="#services">Features</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Trail Locations</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -98,7 +96,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
                         <h3>Accessibility</h3>
-                        <p class="text-muted">Cross-Platform compatibility with one common interface among operating systems.</p>
+                        <p class="text-muted">Cross-Platform compatibility with one common interface among operating system.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -110,18 +108,12 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
                         <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <p class="text-muted">As we expand our location database, receive instantaneous updates on your screen.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -130,8 +122,8 @@
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                    <a href="img/fremont_older.jpg" class="portfolio-box">
+                        <img src="img/fremont_older.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -145,9 +137,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <img src="static/images/litter-460984_960_720.jpg">
+                    <a href="img/montebello.jpg" class="portfolio-box">
+                        <img src="img/montebello.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -222,6 +213,44 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section>
+        <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 425px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: 37.3328541, lng: -122.0892263};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASZApUTlh-JBoNS3eg5CwsevrGW2DLOGc&libraries=places&callback=initMap">
+    </script>
+  </body>
+
+    
+    
     </section>
 
     <aside class="bg-dark">
