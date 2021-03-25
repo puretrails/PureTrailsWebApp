@@ -33,7 +33,7 @@ pycosat==0.6.3
 pyparsing==2.3.0
 python-dateutil==1.5
 pytz==2018.9
-PyYAML==3.13
+PyYAML==5.4
 requests==2.19.1
 ruamel.yaml==0.15.71
 scipy==1.1.0
